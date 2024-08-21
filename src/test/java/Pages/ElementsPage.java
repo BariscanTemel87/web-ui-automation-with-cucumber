@@ -1,11 +1,18 @@
 package Pages;
 
+import org.openqa.selenium.WebDriver;
+
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 
-public class ElementsPage {
+public class ElementsPage extends BasePage {
+
+
+    public ElementsPage() {
+
+        }
     public void openElementsPage() {
-        open("https://demoqa.com/elements");
+            open("/elements");
     }
 
     public void clickButtonsOption() {

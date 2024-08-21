@@ -1,14 +1,17 @@
 package Pages;
 
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.WebDriverRunner.driver;
 
-public class WebTablesPage {
+public class WebTablesPage extends BasePage {
+
+    public WebTablesPage() {
+    }
+
     public void openWebTablesPage() {
-        open("https://demoqa.com/webtables");
+        open("/webtables");
     }
 
     public void clickAddButton() {
